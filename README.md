@@ -23,4 +23,4 @@ Build and run using Docker Compose:
 
 Hello world!
 
-first submmit code. 2019.09.18
+first submmit code 2019.09.18

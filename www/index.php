@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Hello world!</title>
+	<title>Master Builder Demo!</title>
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<style>
 	body {
@@ -21,13 +21,14 @@
     $zone = @file_get_contents("http://169.254.169.254/latest/meta-data/placement/availability-zone");
     $private_id = @file_get_contents("http://instance-data/latest/meta-data/local-ipv4");
   ?>
-    <img src="https://s3.cn-north-1.amazonaws.com.cn/bjsdemo/CodeDeploy-Application-Code/awschina.png" width="300"/>
 	<img id="logo" src="logo.png" />
-	<h1><?php echo "Hello ".($_ENV["NAME"]?$_ENV["NAME"]:"world")."!"; ?></h1>
+	<h1>This is my Master Builder Demo!</h1>
+	<h1>Version 1</h1>
+	#<h1><?php echo "Hello ".($_ENV["NAME"]?$_ENV["NAME"]:"world")."!"; ?></h1>
 	<h2>EC2 Instance ID: <?php echo $instance_id; ?></h2>
 	<h2>EC2 Zone: <?php echo $zone; ?></h2>
 	<h2>EC2 Private IP: <?php echo $private_id; ?></h2>
-	<?php if($_ENV["HOSTNAME"]) {?><h3>My hostname is <?php echo $_ENV["HOSTNAME"]; ?></h3><?php } ?>
+	#<?php if($_ENV["HOSTNAME"]) {?><h3>My hostname is <?php echo $_ENV["HOSTNAME"]; ?></h3><?php } ?>
 	<?php
 	$links = [];
 	foreach($_ENV as $key => $value) {

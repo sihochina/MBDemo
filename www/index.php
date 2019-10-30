@@ -23,7 +23,7 @@
   ?>
 	<img id="logo" src="logo.png" />
 	<h1>This is my Master Builder Demo!</h1>
-	<h1>Version 2</h1>
+	<h1>Version 3</h1>
 	<h2>EC2 Instance ID: <?php echo $instance_id; ?></h2>
 	<h2>EC2 Zone: <?php echo $zone; ?></h2>
 	<h2>EC2 Private IP: <?php echo $private_id; ?></h2>
